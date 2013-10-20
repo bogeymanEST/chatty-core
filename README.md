@@ -19,3 +19,10 @@ The core plugin provides the following commands:
 `!login [username] [password]`
 > Logs a user in with the given username or password.<br/>
 > The command can only be used in private messages.
+
+
+Building
+========
+Building is done using Maven. Build the `pom.xml` file using your favourite Java IDE or the command prompt: `mvn install`. 
+The plugin's jar file is outputed into the `target` directory. Drop the jar file into Chatty's `plugins` folder and
+restart the bot.
