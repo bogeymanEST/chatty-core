@@ -19,7 +19,7 @@
 
 package org.superfuntime.coreplugin;
 
-import org.superfuntime.chatty.Core;
+import org.superfuntime.chatty.Chatty;
 import org.superfuntime.chatty.chat.Chat;
 import org.superfuntime.chatty.chat.User;
 import org.superfuntime.chatty.commands.CommandManager;
@@ -52,7 +52,7 @@ public class CmdRegister implements CommandHandler {
         user.setProfile(profile);
         chat.send("Successfully registered!");
         chat.send("You can use the login command to log in if I don't recognize you.");
-        if (Core.getBotCount() > 1)
+        if (Chatty.getBotCount() > 1)
             chat.send("Your account is the same across all chat protocols.");
     }
 }

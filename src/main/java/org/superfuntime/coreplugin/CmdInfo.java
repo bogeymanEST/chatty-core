@@ -19,7 +19,7 @@
 
 package org.superfuntime.coreplugin;
 
-import org.superfuntime.chatty.Core;
+import org.superfuntime.chatty.Chatty;
 import org.superfuntime.chatty.chat.Chat;
 import org.superfuntime.chatty.events.CommandEvent;
 
@@ -32,8 +32,8 @@ public class CmdInfo implements CommandHandler {
     @Override
     public void onCommand(CommandEvent e) {
         Chat chat = e.getMessage().getChat();
-        chat.send("Chatty by bogeymanEST:",
-                  "Running bots: " + Core.getBotCount(),
-                  "Running plugins: " + Core.getPluginCount());
+        chat.send("Chatty by bogeymanEST. Running" +
+                   Chatty.getBotCount() + " bots, " +
+                  Chatty.getPluginCount() + " plugins.");
     }
 }
